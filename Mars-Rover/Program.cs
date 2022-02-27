@@ -40,7 +40,7 @@ namespace Mars_Rover
                             break;
                         else
                             //If the entered value is not empty, it is added to the input list.
-                            inputList.Add(input);
+                            inputList.Add(input.ToUpper());
                     }
 
                     //This function is called to start the navigation when the input entries are finished.
