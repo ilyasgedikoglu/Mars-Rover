@@ -50,7 +50,7 @@ namespace Mars_Rover
                             else
                             {
                                 //Creating the Rover object. The first parameter is the x coordinate, the second parameter is the y coordinate, and the third parameter is the direction.
-                                Rover rover = new Rover(Convert.ToInt32(input1List[0]), Convert.ToInt32(input1List[1]), Convert.ToChar(input1List[2]));
+                                Rover rover = new Rover(Convert.ToInt32(input1List[0]), Convert.ToInt32(input1List[1]), Convert.ToChar(input1List[2].ToUpper()));
 
                                 //We get the movements that the rover will do.
                                 var input2 = Console.ReadLine();
