@@ -138,26 +138,18 @@ namespace Mars_Rover
                     {
                         var result = Left();
                         if (result != "The rover's direction information is incorrect.")
-                        {
                             Direction = Convert.ToChar(result);
-                        }
                         else
-                        {
                             return result;
-                        }
                     }
                     //If the letter read is L, the "Right" function is called to make the rover turn left.
                     else if (MovementSeries[y] == 'R')
                     {
                         var result = Right();
                         if (result != "The rover's direction information is incorrect.")
-                        {
                             Direction = Convert.ToChar(result);
-                        }
                         else
-                        {
                             return result;
-                        }
                     }                    
                     //If the letter read is M, the "Move" function is called to move the rover 1 grid forward.
                     else if (MovementSeries[y] == 'M')
